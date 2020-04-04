@@ -1,0 +1,66 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home</title>
+    <!-- Meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content=""/>
+    <!-- Meta tags -->
+    <!--stylesheets-->
+    <link href="{% static 'assets/css/style.css' %}" rel='stylesheet' type='text/css' media="all">
+    <!--//style sheet end here-->
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
+</head>
+<body>
+<div class="mid-class">
+    <div class="art-right-w3ls">
+        <h2>登陆</h2>
+        <form action="login.html" method="post">
+            {% csrf_token %}
+            <div class="main">
+                <div class="form-left-to-w3l">
+                    <input type="text" name="username" placeholder="用户名" required="">
+                </div>
+                <div class="form-left-to-w3l ">
+                    <input type="password" name="password" placeholder="密码" required="">
+                    <div class="clear"></div>
+                </div>
+                {% if data %}
+                    <div id="error" style="color: red">
+                        <p1>账号或密码错误！</p1>
+                    </div>
+                {% endif %}
+            </div>
+            <div class="left-side-forget">
+                <input type="checkbox" class="checked">
+                <span class="remenber-me">记住我</span>
+            </div>
+            <div class="right-side-forget">
+                <a href="#" class="for">忘记密码...?</a>
+            </div>
+            <div class="clear"></div>
+            <div class="btnn">
+                <button type="submit">登陆</button>
+            </div>
+        </form>
+        <div class="w3layouts_more-buttn">
+            <h3>没有账号..?
+                <a href="register.html">在这里注册</a>
+            </h3>
+        </div>
+    </div>
+    <div class="art-left-w3ls">
+        <h1 class="header-w3ls">
+            成大专车<br>
+            您的贴身护驾
+        </h1>
+    </div>
+</div>
+<footer class="bottem-wthree-footer">
+    <p>Copyright &copy; 2019.HOKA All rights reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="992f13a8-5c93-4211-b7e0-266c8b060a09" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="first" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1RP5UtfcRvCorK2bAYJ2JMBBQ4r" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="PyScientificConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\PycharmProjects\first\myapp" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\PycharmProjects\first\static\assets\css" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Django server.first">
+    <configuration name="analyse" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="first" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/myapp" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/myapp/analyse.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="settings" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="first" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/first" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/first/settings.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="first" type="Python.DjangoServer" factoryName="Django server">
+      <module name="first" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="first.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.analyse" />
+        <item itemvalue="Python.settings" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="992f13a8-5c93-4211-b7e0-266c8b060a09" name="Default Changelist" comment="" />
+      <created>1569555910271</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1569555910271</updated>
+      <workItem from="1569555913057" duration="220000" />
+      <workItem from="1569556351753" duration="391000" />
+      <workItem from="1570096980508" duration="25000" />
+      <workItem from="1570097040108" duration="616000" />
+      <workItem from="1570159800949" duration="1512000" />
+      <workItem from="1570270681840" duration="3683000" />
+      <workItem from="1570329718202" duration="2107000" />
+      <workItem from="1570333517461" duration="763000" />
+      <workItem from="1570500799536" duration="1733000" />
+      <workItem from="1570503915942" duration="3030000" />
+      <workItem from="1570581409599" duration="835000" />
+      <workItem from="1570604169273" duration="1640000" />
+      <workItem from="1570605869013" duration="682000" />
+      <workItem from="1570765236543" duration="989000" />
+      <workItem from="1570777239520" duration="10840000" />
+      <workItem from="1570870064051" duration="3290000" />
+      <workItem from="1570957258763" duration="5035000" />
+      <workItem from="1571039971060" duration="4454000" />
+      <workItem from="1571054700381" duration="3923000" />
+      <workItem from="1571106020678" duration="3861000" />
+      <workItem from="1571131813299" duration="494000" />
+      <workItem from="1571186163257" duration="4975000" />
+      <workItem from="1571207485349" duration="5105000" />
+      <workItem from="1571232387522" duration="3000" />
+      <workItem from="1571233201429" duration="1097000" />
+      <workItem from="1571471326517" duration="1535000" />
+      <workItem from="1571540859308" duration="637000" />
+      <workItem from="1571559468316" duration="98000" />
+      <workItem from="1571559654540" duration="2927000" />
+      <workItem from="1571569315284" duration="6086000" />
+      <workItem from="1571627404646" duration="4144000" />
+      <workItem from="1571644565445" duration="5669000" />
+      <workItem from="1571710561405" duration="4369000" />
+      <workItem from="1571727760023" duration="13481000" />
+      <workItem from="1571791102777" duration="2774000" />
+      <workItem from="1571830570040" duration="44000" />
+      <workItem from="1571832856595" duration="2023000" />
+      <workItem from="1571845679396" duration="1163000" />
+      <workItem from="1571908765992" duration="428000" />
+      <workItem from="1572315482129" duration="4909000" />
+      <workItem from="1572395690191" duration="3925000" />
+      <workItem from="1572421618612" duration="56000" />
+      <workItem from="1572588094656" duration="4034000" />
+      <workItem from="1572593998638" duration="4758000" />
+      <workItem from="1572696557441" duration="1431000" />
+      <workItem from="1573000408862" duration="2787000" />
+      <workItem from="1573006159852" duration="1081000" />
+      <workItem from="1573028018050" duration="3536000" />
+      <workItem from="1573038589157" duration="3721000" />
+      <workItem from="1573094567929" duration="621000" />
+      <workItem from="1573182692506" duration="963000" />
+      <workItem from="1573196070445" duration="1908000" />
+      <workItem from="1573199037333" duration="3944000" />
+      <workItem from="1573287612077" duration="1402000" />
+      <workItem from="1573291568989" duration="12000" />
+      <workItem from="1573291984610" duration="11000" />
+      <workItem from="1573523273465" duration="792000" />
+      <workItem from="1573524900473" duration="1366000" />
+      <workItem from="1573543477002" duration="74000" />
+      <workItem from="1573605235027" duration="3747000" />
+      <workItem from="1573633830636" duration="2465000" />
+      <workItem from="1573779567811" duration="98000" />
+      <workItem from="1573973644399" duration="4978000" />
+      <workItem from="1574064031097" duration="1283000" />
+      <workItem from="1574066759854" duration="1228000" />
+      <workItem from="1574130894815" duration="1964000" />
+      <workItem from="1574210413564" duration="2046000" />
+      <workItem from="1574233905309" duration="864000" />
+      <workItem from="1574236302980" duration="3918000" />
+      <workItem from="1574350276066" duration="730000" />
+      <workItem from="1574392098498" duration="2964000" />
+      <workItem from="1574496764298" duration="456000" />
+      <workItem from="1574596577292" duration="208000" />
+      <workItem from="1574669395480" duration="2056000" />
+      <workItem from="1574671625296" duration="2458000" />
+      <workItem from="1574735151207" duration="4582000" />
+      <workItem from="1574765170158" duration="4796000" />
+      <workItem from="1574784459771" duration="2508000" />
+      <workItem from="1574815355160" duration="4490000" />
+      <workItem from="1574834689670" duration="1007000" />
+      <workItem from="1574836922092" duration="2874000" />
+      <workItem from="1574845128045" duration="69000" />
+      <workItem from="1575101601396" duration="18000" />
+      <workItem from="1575104279075" duration="11000" />
+      <workItem from="1575447794562" duration="393000" />
+      <workItem from="1575516722732" duration="693000" />
+      <workItem from="1575521960426" duration="1833000" />
+      <workItem from="1575537674112" duration="333000" />
+      <workItem from="1575545072614" duration="266000" />
+      <workItem from="1575651670389" duration="2559000" />
+      <workItem from="1575881226485" duration="19000" />
+      <workItem from="1575942331833" duration="40000" />
+      <workItem from="1575965813855" duration="645000" />
+      <workItem from="1583932070066" duration="135000" />
+      <workItem from="1584712867922" duration="46000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="337" y="173" key="com.intellij.ide.util.TipDialog" timestamp="1584712867951">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="337" y="173" key="com.intellij.ide.util.TipDialog/0.0.1280.689@0.0.1280.689" timestamp="1584712867951" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/first$settings.coverage" NAME="settings Coverage Results" MODIFIED="1573525471762" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/first" />
+    <SUITE FILE_PATH="coverage/first$analyse.coverage" NAME="analyse Coverage Results" MODIFIED="1574739567173" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/myapp" />
+  </component>
+</project>

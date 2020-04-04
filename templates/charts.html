@@ -1,0 +1,194 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Charts</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <!-- VENDOR CSS -->
+    <link rel="stylesheet" href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/vendor/font-awesome/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/vendor/linearicons/style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/vendor/chartist/css/chartist-custom.css' %}">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="{% static 'assets/css/main.css' %}">
+    <!-- FOR DEMO PURPOSES ONLY. You should remove this in your project -->
+    <link rel="stylesheet" href="{% static 'assets/css/demo.css' %}">
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+    <!-- ICONS -->
+    <link rel="apple-touch-icon" sizes="76x76" href="{% static 'assets/img/apple-icon.png' %}">
+</head>
+
+<body>
+<!-- WRAPPER -->
+<div id="wrapper">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="brand">
+            <a href="index.html"><img src="{% static 'assets/img/logo.png' %}" alt="Klorofil Logo"
+                                      class="img-responsive logo"></a>
+        </div>
+        <div class="container-fluid">
+            <div class="navbar-btn">
+                <button type="button" class="btn-toggle-fullwidth"><i class="lnr lnr-arrow-left-circle"></i></button>
+            </div>
+            <form class="navbar-form navbar-left">
+                <div class="input-group">
+                    <input type="text" value="" class="form-control" placeholder="输入你想搜索的内容...">
+                    <span class="input-group-btn"><button type="button" class="btn btn-primary">Go</button></span>
+                </div>
+            </form>
+            <div id="navbar-menu">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle icon-menu" data-toggle="dropdown">
+                            <i class="lnr lnr-alarm"></i>
+                            <span class="badge bg-danger">3</span>
+                        </a>
+                        <ul class="dropdown-menu notifications">
+                            <li><a href="#" class="notification-item"><span class="dot bg-warning"></span>系统空间剩余不足</a>
+                            </li>
+                            <li><a href="#" class="notification-item"><span class="dot bg-danger"></span>9 条投诉未处理</a>
+                            </li>
+                            <li><a href="#" class="notification-item"><span class="dot bg-success"></span>本月运营报告已生成</a>
+                            </li>
+                            <li><a href="#" class="more">查看所有提醒</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i
+                                class="lnr lnr-question-circle"></i> <span>帮助</span> <i
+                                class="icon-submenu lnr lnr-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">基础教程</a></li>
+                            <li><a href="#">数据处理</a></li>
+                            <li><a href="#">安全</a></li>
+                            <li><a href="#">故障排除</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img
+                                src="{% static 'assets/img/user.png' %}" class="img-circle" alt="Avatar">
+                            <span>管理员</span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#"><i class="lnr lnr-user"></i> <span>我的账号</span></a></li>
+                            <li><a href="#"><i class="lnr lnr-envelope"></i> <span>消息</span></a></li>
+                            <li><a href="#"><i class="lnr lnr-cog"></i> <span>设置</span></a></li>
+                            <li><a href="login.html"><i class="lnr lnr-exit"></i> <span>登出</span></a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- END NAVBAR -->
+    <!-- LEFT SIDEBAR -->
+    <div id="sidebar-nav" class="sidebar">
+        <div class="sidebar-scroll">
+            <nav>
+                <ul class="nav">
+                    <li><a href="index.html" class=" "><i class="lnr lnr-home"></i> <span>总览</span></a></li>
+                    <li><a href="charts.html" class="active"><i class="lnr lnr-chart-bars"></i> <span>统计报表</span></a>
+                    </li>
+                    <li><a href="notifications.html" class=""><i class="	fa fa-users"></i> <span>人员管理</span></a></li>
+                    <li><a href="tables.html" class=""><i class="	fa fa-warning"></i> <span>投诉处理</span></a></li>
+                    <li><a href="typography.html" class=""><i class="fa fa-map-marker	"></i> <span>实时运营地图</span></a>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!-- END LEFT SIDEBAR -->
+    <!-- MAIN -->
+    <div class="main">
+        <!-- MAIN CONTENT -->
+        <div class="main-content">
+            <div class="container-fluid">
+                <h3 class="page-title">统计报表</h3>
+                <div class="">
+                    <a href="#">
+                        <button type="button" class="buttonstyle btn btn-primary">统计图</button>
+                    </a>
+                    <a href="charts2.html">
+                        <button type="button" class="buttonstyle btn btn-primary">关系对比图</button>
+                    </a>
+                    <a href="charts3.html">
+                        <button type="button" class="buttonstyle btn btn-primary">关键词云图</button>
+                    </a>
+                </div>
+                <div class="row" style="width: 600px;">
+                    <button id="1" type="button" class="btn btn-default btn-lg btn-block">大数据分析Ⅰ</button><br>
+                    <div id="m1" style="width: 600px;height:400px;display:none;">
+                        <img height="400px" src="{% static 'assets/img/myplot.jpg' %}" alt="m1">
+                    </div>
+                    <br><button id="2" type="button" class="btn btn-default btn-lg btn-block">大数据分析Ⅱ</button><br>
+                    <div id="m2" style="width: 600px;height:540px;display:none;">
+                        <img width="600px" src="{% static 'assets/img/myplot2.jpg' %}" alt="m1">
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="main" style="width: 600px;height:400px;"></div>
+                </div>
+            </div>
+        </div>
+        <!-- END MAIN CONTENT -->
+    </div>
+    <!-- END MAIN -->
+    <div class="clearfix"></div>
+    <footer>
+        <div class="container-fluid">
+            <p class="copyright">Copyright &copy; 2019.HOKA All rights reserved.</p>
+        </div>
+    </footer>
+</div>
+<!-- END WRAPPER -->
+<!-- Javascript -->
+<script src="{% static 'assets/vendor/jquery/jquery.min.js' %}"></script>
+<script src="{% static 'assets/vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'assets/vendor/jquery-slimscroll/jquery.slimscroll.min.js' %}"></script>
+<script src="{% static 'assets/vendor/chartist/js/chartist.min.js' %}"></script>
+<script src="{% static 'assets/scripts/klorofil-common.js' %}"></script>
+<script src="{% static 'assets/scripts/echarts.js' %}"></script>
+<script type="text/javascript">
+    // 基于准备好的dom，初始化echarts实例
+    var myChart = echarts.init(document.getElementById('main'));
+
+    // 指定图表的配置项和数据
+    var option = {
+        title: {
+            text: '驾驶违规类别统计'
+        },
+        tooltip: {},
+        legend: {
+            data: ['人次']
+        },
+        xAxis: {
+            data: ["打电话", "超速", "疲劳驾驶", "闯红灯", "按喇叭", "飘移"]
+        },
+        yAxis: {},
+        series: [{
+            name: '人次',
+            type: 'bar',
+            data: [15, 30, 36, 18, 10, 20]
+        }]
+    };
+
+    // 使用刚指定的配置项和数据显示图表。
+    myChart.setOption(option);
+    $(document).ready(function(){
+  $("#1").click(function(){
+    $("#m1").toggle("slow");
+  });
+    $("#2").click(function(){
+    $("#m2").toggle("slow");
+  });
+});
+</script>
+</body>
+
+</html>

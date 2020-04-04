@@ -1,0 +1,307 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Profile</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <!-- VENDOR CSS -->
+    <link rel="stylesheet" href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/vendor/font-awesome/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/vendor/linearicons/style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/vendor/chartist/css/chartist-custom.css' %}">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="{% static 'assets/css/main.css' %}">
+    <!-- FOR DEMO PURPOSES ONLY. You should remove this in your project -->
+    <link rel="stylesheet" href="{% static 'assets/css/demo.css' %}">
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+    <!-- ICONS -->
+    <link rel="apple-touch-icon" sizes="76x76" href="{% static 'assets/img/apple-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{% static 'assets/img/favicon.png' %}">
+</head>
+
+<body>
+<!-- WRAPPER -->
+<div id="wrapper">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="brand">
+            <a href="index.html"><img src="{% static 'assets/img/logo.png' %}" alt="Klorofil Logo"
+                                      class="img-responsive logo"></a>
+        </div>
+        <div class="container-fluid">
+            <div class="navbar-btn">
+                <button type="button" class="btn-toggle-fullwidth"><i class="lnr lnr-arrow-left-circle"></i></button>
+            </div>
+            <form class="navbar-form navbar-left">
+                <div class="input-group">
+                    <input type="text" value="" class="form-control" placeholder="输入你想搜索的内容...">
+                    <span class="input-group-btn"><button type="button" class="btn btn-primary">Go</button></span>
+                </div>
+            </form>
+            <div id="navbar-menu">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle icon-menu" data-toggle="dropdown">
+                            <i class="lnr lnr-alarm"></i>
+                            <span class="badge bg-danger">3</span>
+                        </a>
+                        <ul class="dropdown-menu notifications">
+                            <li><a href="#" class="notification-item"><span class="dot bg-warning"></span>系统空间剩余不足</a>
+                            </li>
+                            <li><a href="#" class="notification-item"><span class="dot bg-danger"></span>9 条投诉未处理</a>
+                            </li>
+                            <li><a href="#" class="notification-item"><span class="dot bg-success"></span>本月运营报告已生成</a>
+                            </li>
+                            <li><a href="#" class="more">查看所有提醒</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i
+                                class="lnr lnr-question-circle"></i> <span>帮助</span> <i
+                                class="icon-submenu lnr lnr-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">基础教程</a></li>
+                            <li><a href="#">数据处理</a></li>
+                            <li><a href="#">安全</a></li>
+                            <li><a href="#">故障排除</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img
+                                src="{% static 'assets/img/user.png' %}" class="img-circle" alt="Avatar">
+                            <span>管理员</span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#"><i class="lnr lnr-user"></i> <span>我的账号</span></a></li>
+                            <li><a href="#"><i class="lnr lnr-envelope"></i> <span>消息</span></a></li>
+                            <li><a href="#"><i class="lnr lnr-cog"></i> <span>设置</span></a></li>
+                            <li><a href="login.html"><i class="lnr lnr-exit"></i> <span>登出</span></a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- END NAVBAR -->
+    <!-- LEFT SIDEBAR -->
+    <div id="sidebar-nav" class="sidebar">
+        <div class="sidebar-scroll">
+            <nav>
+                <ul class="nav">
+                    <li><a href="index.html" class=" "><i class="lnr lnr-home"></i> <span>总览</span></a></li>
+                    <li><a href="charts.html" class=""><i class="lnr lnr-chart-bars"></i> <span>统计报表</span></a></li>
+                    <li><a href="notifications.html" class="active"><i class="	fa fa-users"></i>
+                        <span>人员管理</span></a></li>
+                    <li><a href="tables.html" class=""><i class="	fa fa-warning"></i> <span>投诉处理</span></a></li>
+                    <li><a href="typography.html" class=""><i class="fa fa-map-marker	"></i> <span>实时运营地图</span></a>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!-- END LEFT SIDEBAR -->
+    <!-- MAIN -->
+    <div class="main">
+        <!-- MAIN CONTENT -->
+        <div class="main-content">
+            <div class="container-fluid">
+                <div class="panel panel-profile">
+                    <div class="clearfix">
+                        <!-- LEFT COLUMN -->
+                        <div class="profile-left">
+
+                            <!-- PROFILE HEADER -->
+                            <div class="profile-header">
+                                <div class="overlay"></div>
+                                <div class="profile-main">
+                                    <img src="{{ icon }}" class="headimg" alt="Avatar">
+                                    <h3 class="name">张杰</h3>
+                                    <span class="online-status status-available">在线</span>
+                                    <br><br>
+                                    <form action="page_profile.html" enctype="multipart/form-data" method="post">
+                                        {% csrf_token %}
+                                        <div class="btn btn-sm btn-primary" style="position: relative;">更换头像
+                                            <input class="btn-primary" type="file" title="" name="u_icon"
+                                                   style="width:100%; height:100%; position: absolute; top: 0; left: 0; opacity: 0; cursor: pointer;">
+                                        </div>
+                                        &nbsp&nbsp
+                                        <div class="btn btn-sm btn-primary" style="position: relative;">点击上传
+                                            <input type="submit" value="上传头像"
+                                                   style="position: absolute; top: 0; left: 0; opacity: 0; cursor: pointer;">
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="profile-stat">
+                                    <div class="row">
+                                        <div class="col-md-4 stat-item">
+                                            15 <span>违规记录</span>
+                                        </div>
+                                        <div class="col-md-4 stat-item">
+                                            2 <span>投诉量</span>
+                                        </div>
+                                        <div class="col-md-4 stat-item">
+                                            2174(km) <span>行驶里程</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END PROFILE HEADER -->
+                            <!-- PROFILE DETAIL -->
+                            <div class="profile-detail">
+                                <div class="profile-info">
+                                    <h4 class="heading">基本信息</h4>
+                                    <ul class="list-unstyled list-justify">
+                                        <li>员工号 <span>10002</span></li>
+                                        <li>注册日期<span>2018 年 12 月 2 日</span></li>
+                                        <li>联系方式 <span>13589765334</span></li>
+                                        <li>车型 <span>迈腾2018</span></li>
+                                        <li>车牌号 <span>川A 237888</span></li>
+                                    </ul>
+                                </div>
+                                <br><br><br>
+                                <div class="text-center"><a href="#" class="btn btn-danger">删除该员工</a></div>
+                            </div>
+                            <!-- END PROFILE DETAIL -->
+                        </div>
+                        <!-- END LEFT COLUMN -->
+                        <!-- RIGHT COLUMN -->
+                        <div class="profile-right">
+                            <h4 class="heading">个人数据分析</h4>
+                            <!-- AWARDS -->
+                            <div class="awards">
+                                <div class="main-content ">
+                                    <div class="container-fluid">
+                                        <div class="panel">
+                                            <div class="panel-heading">
+
+                                            </div>
+                                            <div class="panel-body">
+                                                <div id="demo-bar-chart" class="ct-chart"></div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4"><span class="panel-note"><i class="fa fa-clock-o"></i>2019.3.15--2019.3.22</span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="text-center"><a href="#" class="btn btn-default">查看详细数据</a></div>
+                            </div>
+                            <!-- END AWARDS -->
+                            <!-- TABBED CONTENT -->
+                            <div class="custom-tabs-line tabs-line-bottom left-aligned">
+                                <ul class="nav" role="tablist">
+                                    <li class="active"><a href="#tab-bottom-left1" role="tab" data-toggle="tab">违规记录</a>
+                                    </li>
+                                    <li><a href="#tab-bottom-left2" role="tab" data-toggle="tab">投诉记录</a></li>
+                                </ul>
+                            </div>
+                            <div class="tab-content">
+                                <div class="tab-pane fade in active" id="tab-bottom-left1">
+                                    <ul class="list-unstyled activity-timeline">
+                                        <li>
+                                            <i class="fa fa-warning activity-icon"></i>
+                                            <p>自动检测：疲劳驾驶 <span class="timestamp">2 天 前</span></p>
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-warning activity-icon"></i>
+                                            <p>自动检测：疲劳驾驶 <span class="timestamp">2 天 前</span></p>
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-warning activity-icon"></i>
+                                            <p>自动检测：闯红灯 <span class="timestamp">4 天 前</span></p>
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-warning activity-icon"></i>
+                                            <p>自动检测：违规动作 <span class="timestamp">6 天 前</span></p>
+                                        </li>
+                                    </ul>
+                                    <div class="margin-top-30 text-center"><a href="#"
+                                                                              class="btn btn-default">查看所有违规记录</a></div>
+                                </div>
+                                <div class="tab-pane fade" id="tab-bottom-left2">
+                                    <div class="table-responsive">
+                                        <table class="table project-table">
+                                            <thead>
+                                            <tr>
+                                                <th>投诉人</th>
+                                                <th>投诉理由</th>
+                                                <th>时间</th>
+                                                <th>状态</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td><a href="#">黄 女士</a></td>
+                                                <td>驾驶途中吸烟</td>
+                                                <td>2019.2.01 13：24：07</td>
+                                                <td><span class="label label-success">已处理</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#">陈 先生</a></td>
+                                                <td>使用不文明语言</td>
+                                                <td>2019.1.18 20：06：55</td>
+                                                <td><span class="label label-success">已处理</span></td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END TABBED CONTENT -->
+                        </div>
+                        <!-- END RIGHT COLUMN -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END MAIN CONTENT -->
+    </div>
+    <!-- END MAIN -->
+    <div class="clearfix"></div>
+    <footer>
+        <div class="container-fluid">
+            <p class="copyright">Copyright &copy; 2019.HOKA All rights reserved.</p>
+        </div>
+    </footer>
+
+</div>
+<!-- END WRAPPER -->
+<!-- Javascript -->
+<script src="{% static 'assets/vendor/jquery/jquery.min.js' %}"></script>
+<script src="{% static 'assets/vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'assets/vendor/jquery-slimscroll/jquery.slimscroll.min.js' %}"></script>
+<script src="{% static 'assets/vendor/chartist/js/chartist.min.js' %}"></script>
+<script src="{% static 'assets/scripts/klorofil-common.js' %}"></script>
+<script>
+    $(function () {
+        var options;
+
+        var data = {
+            labels: ['疲劳驾驶', '酒后驾驶', '违规动作', '超速', '闯红灯', '其他'],
+            series: [
+                [2, 0, 5, 2, 1, 3],
+            ]
+        };
+
+
+        // bar chart
+        options = {
+            height: "200px",
+            axisX: {
+                showGrid: false
+            },
+        };
+
+        new Chartist.Bar('#demo-bar-chart', data, options);
+    });
+</script>
+</body>
+
+</html>

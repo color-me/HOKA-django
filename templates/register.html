@@ -1,0 +1,83 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home</title>
+    <!-- Meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content=""
+    />
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!-- Meta tags -->
+    <!--stylesheets-->
+    <link href="{% static 'assets/css/style2.css' %}" rel='stylesheet' type='text/css' media="all">
+    <!--//style sheet end here-->
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
+</head>
+<body>
+<video autoplay muted loop style="width:100%">
+    <source src="{% static 'assets/video/car.mp4' %}"/>
+</video>
+<div class="mid-class">
+    <div class="art-right-w3ls">
+        <h2>注册</h2>
+        <!--login form-->
+        <div class="letter-w3ls">
+            <form class="layui-form" action="register.html" method="post">
+                {% csrf_token %}
+                <!--输入用户名-->
+                <div class="layui-input-inline form-left-to-w3l">
+                    <div class="layui-inline" style="width: 85%">
+                        <input type="text" name="username" id="uname" required placeholder="用户名" autocomplete="off"
+                               class="layui-input">
+                    </div>
+                </div>
+                <!--输入密码-->
+                <div class="layui-input-inline form-left-to-w3l">
+                    <div class="layui-inline" style="width: 85%">
+                        <input type="password" name="password" id="pwd" required placeholder="密码" autocomplete="off"
+                               class="layui-input">
+                        <input type="password" name="re_pwd" placeholder="确认密码">
+                    </div>
+                    {% if data == 1 %}
+                        <div id="error" style="color: red">
+                            <p1>用户已存在！</p1>
+                        </div>
+                    {% endif %}
+                    {% if data == 2 %}
+                        <div id="error" style="color: red">
+                            <p1>两次密码不一致！</p1>
+                        </div>
+                    {% endif %}
+                    {% if data == 3 %}
+                        <div id="error" style="color: red">
+                            <p1>不能有空！</p1>
+                        </div>
+                    {% endif %}
+                </div>
+                <div class=" btnn" style="width: 85%">
+                    <button type="submit">注册</button>
+                </div>
+                <br/>
+            </form>
+            <p class="w3layouts_more-buttn">
+                <a href="login.html">已有账号？立即登录</a>
+            </p>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+<footer class="bottem-wthree-footer">
+    <p>Copyright &copy; 2019.HOKA All rights reserved.</p>
+    <br>
+    <p style="font-size: 20px">成 大 专 车</p>
+</footer>
